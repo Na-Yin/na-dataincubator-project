@@ -20,8 +20,12 @@ def get_data(ticker):
     datatable = json['datatable']
     data = datatable['data']
     df = DataFrame(data)
-    df = df.set_index(0)
-    df.index = pd.to_datetime(df.index)
-    df.columns = ['closing']
-    return df[start_date:now]
+    try:
+        df = df.set_index(0)
+        df.index = pd.to_datetime(df.index)
+        df.columns = ['closing']
+        return df[start_date:now]
+    except Exception as e:
+        df = []
+        return df
 

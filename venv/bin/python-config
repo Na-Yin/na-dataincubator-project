@@ -1,4 +1,4 @@
-#!/Users/twitter/Desktop/stock ticker/venv/bin/python
+#!/Users/twitter/Desktop/stock_ticker/venv/bin/python
 
 import sys
 import getopt

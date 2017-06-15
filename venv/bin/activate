@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/twitter/Desktop/stock ticker/venv"
+VIRTUAL_ENV="/Users/twitter/Desktop/stock_ticker/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

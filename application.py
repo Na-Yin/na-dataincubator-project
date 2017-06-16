@@ -23,7 +23,7 @@ def index():
             f.write('Ticker: %s\n'%(app.vars['ticker']))
             f.close()
             return render_template('results.html', script=script, div=div)
-# Add else: for error handling; render_template with message for if ticker does not result in data; change ^else: to elif based on request resulting in data
+
 
 if __name__ == "__main__":
     app.run(debug=True)

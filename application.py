@@ -6,6 +6,10 @@ app = Flask(__name__)
 
 app.vars={}
 
+@app.route('/')
+def main():
+    return redirect('/index')
+
 @app.route('/index',methods=['GET','POST'])
 def index():
     if request.method == 'GET':

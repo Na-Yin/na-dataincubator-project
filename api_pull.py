@@ -4,7 +4,6 @@ import requests
 import simplejson as json
 from datetime import datetime, date
 
-ticker = "goog"
 
 def get_data(ticker):
     url = 'https://www.quandl.com/api/v3/datatables/WIKI/PRICES.json'
@@ -29,4 +28,3 @@ def get_data(ticker):
         df = []
         return df
 
-print(get_data(ticker))

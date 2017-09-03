@@ -1,4 +1,4 @@
-Interactive stock ticker web application. 
+Flask based interactive stock ticker web application. 
 
 Takes user selected stock ticker
 

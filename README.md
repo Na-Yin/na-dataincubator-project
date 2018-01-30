@@ -1,18 +1,7 @@
 # Stock Ticker Web App
-
-Live version [here](http://trevor-stock-ticker.herokuapp.com/)
-
-Flask-based interactive web application. 
-
-
-Takes user selected stock ticker
+Flask-based interactive web application. Takes user selected stock ticker and plots closing price for the past month on an interactive Bokeh plot. Live version hosted on heroku [here](http://trevor-stock-ticker.herokuapp.com/)
 
 ![alt text](https://github.com/trevorwitter/stock-ticker/blob/master/ticker_select.tiff)
 
-and returns corresponding company's closing prices for the past month
-
-
 
 ![alt text](https://github.com/trevorwitter/stock-ticker/blob/master/stock_price.tiff)
-
-Live version running at http://trevor-stock-ticker.herokuapp.com/

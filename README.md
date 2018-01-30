@@ -1,4 +1,9 @@
-Flask-based interactive stock ticker web application. 
+# Stock Ticker Web App
+
+Live version [here](http://trevor-stock-ticker.herokuapp.com/)
+
+Flask-based interactive web application. 
+
 
 Takes user selected stock ticker
 

@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
-import api_pull as ap
-import plot
+import getdata
+import bokeh_plot
 
 app = Flask(__name__)
 
@@ -17,9 +17,9 @@ def index():
     else:
         #request was a post
         app.vars['ticker'] = request.form['ticker']
-        app.vars['results'] = ap.get_data(app.vars['ticker'])
-        
-        script, div = plot.fig(app.vars['results'], app.vars['ticker'])
+        app.vars['results'] = getdata.get_data(app.vars['ticker'])
+        print("length of df: ",len(app.vars['results']))
+        script, div = bokeh_plot.fig(app.vars['results'], app.vars['ticker'])
         f = open('%s.txt'%(app.vars['ticker']),'w')
         f.write('Ticker: %s\n'%(app.vars['ticker']))
         f.close()

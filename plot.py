@@ -3,8 +3,8 @@ from bokeh.embed import components
 
 
 def fig(df,title):
-    plot = figure(plot_width=800, plot_height=400, x_axis_type="datetime", title=title)
-    plot.yaxis.axis_label = "Closing Price"
+    plot = figure(plot_width = 800, plot_height = 400, x_axis_type = "datetime", title = title)
+    plot.yaxis.axis_label = "Stock Closing Price from 5 years ago"
     plot.xaxis.axis_label = "Date"
     plot.line(df.index, df['closing'])
 
@@ -12,4 +12,3 @@ def fig(df,title):
 
     
     return script, div
-

@@ -8,8 +8,7 @@ def get_data(ticker):
     params = {'api_key':'FDNX5xQ2BK_8rbBuwn16', 'qopts.columns':'date,close'}
     params['ticker'] = ticker
     
-    today = date.today()
-    end_date = today.replace(year = today.year - 5)
+    end_date = date.today()
     start_date = end_date.replace(year = end_date.year if end_date.month > 1 else end_date.year - 1, month = end_date.month - 1 if end_date.month > 1 else 12)
     
     response = requests.get(url,params)
